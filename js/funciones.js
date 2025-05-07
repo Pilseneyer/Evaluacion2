@@ -6,8 +6,16 @@ function redirigirLogin() {
     window.location.href="login.html"
 }
 
+const frases=["Reduce el desperdicio", "Comparte alimentos", "Cambia el mundo con pequeños gestos"];
 
-document.querySelector('#fraseMotivadora').textContent='hola';
+function mostrarFrase() {
+    const frase = frases[Math.floor(Math.random() * frases.length)];
+    document.getElementById('fraseMotivadora').textContent=frase;
+
+}
+
+window.onload = mostrarFrase;
+
 
 function validarRegistro() {
     const nombre = document.getElementById("nombre").value;

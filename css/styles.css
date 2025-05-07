@@ -22,5 +22,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
+}
+
+footer {
+    background-color: rgb(162, 196, 167);
 }
