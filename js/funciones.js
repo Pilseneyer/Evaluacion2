@@ -7,7 +7,7 @@ const productos = [
     { nombre: "Manzana Verde", precio: "$100"}
     ];
 
-    const frases=["Reduce el desperdicio", "Comparte alimentos", "Cambia el mundo con pequeños gestos"];
+const frases=["Reduce el desperdicio", "Comparte alimentos", "Cambia el mundo con pequeños gestos"];
 
 
 function redirigirRegistro() {
@@ -63,3 +63,6 @@ productos.forEach(producto => {
     </div>
     `;
     });
+
+/* no sé por qué cuando realizo cambios en esta página, se me bugean las frases motivadoras
+*/
