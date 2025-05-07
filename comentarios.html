@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>EcoFood</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/Recurso 8.svg" type="image/svg+xml">
+    <meta name="description" content="Organización comprometida con la reducción del desperdicio alimentario mediante iniciativas educativas, tecnológicas y prácticas cotidianas.">
+    <meta name="keywords" content="medio ambiente, desperdicio alimentario, sostenibilidad, desarrollo comunitario, soluciones, tecnología, educación">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" href="index.html">
+                <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                </svg>
+                <img src="imagenes/Recurso 7.svg">
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="#aboutUs">Sobre nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#objetivos">Objetivos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#informacion">Información</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="comentarios.html">Comentarios</a></li>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <main>
+        <section id="comentarioPublicar">
+            <div class="centrado">
+                <div class="contenedorCuadrado">
+                    <div class="container mt-5">
+                        <h2>Comentarios de Usuarios</h2>
+                        <form id="formComentario" class="mb-4">
+                        <textarea class="form-control" placeholder="Escribe tu comentario..."
+                        id="comentarioTexto"></textarea>
+                        <button class="btn btn-success mt-2">Publicar</button>
+                        </form>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="comentarios">
+            <div class="centrado">
+                <div id="listaComentarios">
+                    <!-- Comentarios agregados dinámicamente -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/funcionesComentario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+<footer class="row row-cols-1 row-cols-sm-3 row-cols-md-4 py-5 my-5 border-top" id="contacto">
+        <div class="col mb-3"></div>
+        <div class="col mb-3">
+            <h5>Redes sociales</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://www.facebook.com/EcoFoodOficial">Facebook</a></li>
+                <li class="nav-item mb-2"><a href="https://www.instagram.com/ecofood_oficial">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="https://x.com/Ecofood_org">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="col mb-3">
+            <h5>Datos de contacto</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">Dirección: <a href="">Calle Verde 123, Ciudad Sostenible.</a></li>
+                <li class="nav-item mb-2">Correo electrónico: <a href="mailto:contacto@ecofood.org">contacto@ecofood.org</a></li>
+                <li class="nav-item mb-2">Teléfono: <a href="tel:+56912345678">+56 9 1234 5678</a></li>
+                <li class="nav-item mb-2">Página de contacto: <a href="contacto.html">aquí</a></li>
+            </ul>
+        </div>
+</footer>
+</html>

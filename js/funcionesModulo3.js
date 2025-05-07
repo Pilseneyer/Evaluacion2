@@ -7,6 +7,8 @@ const productos = [
     { nombre: "Manzana Verde", precio: "$100"}
     ];
 
+
+function cargarProductos() {
     productos.forEach(producto => {
         document.getElementById("contenedorProductos").innerHTML += `
         <div class="card" style="width: 18rem;">
@@ -18,4 +20,6 @@ const productos = [
         </div>
         `;
         });
-    
+}
+
+window.onload = cargarProductos;
