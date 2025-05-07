@@ -1,5 +1,3 @@
-const frases=["Reduce el desperdicio", "Comparte alimentos", "Cambia el mundo con pequeños gestos"];
-
 const productos = [
     { nombre: "Manzanas", precio: "Gratis" },
     { nombre: "Leche", precio: "$1000" },
@@ -9,17 +7,8 @@ const productos = [
     { nombre: "Manzana Verde", precio: "$100"}
     ];
 
-productos.forEach(producto => {
-    document.getElementById("contenedorProductos").innerHTML += `
-    <div class="card" style="width: 18rem;">
-    <div class="card-body">
-    <h5 class="card-title">${producto.nombre}</h5>
-    <p class="card-text">${producto.precio}</p>
-    <a href="#" class="btn btn-primary">Más información</a>
-    </div>
-    </div>
-    `;
-    });
+    const frases=["Reduce el desperdicio", "Comparte alimentos", "Cambia el mundo con pequeños gestos"];
+
 
 function redirigirRegistro() {
     window.location.href = "registro.html"
@@ -29,6 +18,7 @@ function redirigirLogin() {
     window.location.href="login.html"
 }
 
+
 function mostrarFrase() {
     const frase = frases[Math.floor(Math.random() * frases.length)];
     document.getElementById('fraseMotivadora').textContent=frase;
@@ -36,6 +26,7 @@ function mostrarFrase() {
 }
 
 window.onload = mostrarFrase;
+
 function validarRegistro() {
     const nombre = document.getElementById("nombre").value;
     const correo = document.getElementById("email").value;
@@ -49,26 +40,6 @@ function validarRegistro() {
     return true;
 }
 
-/*
-function validarRegistro() {
-    const nombre = document.getElementById("nombre").value;
-    const correo = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const confPassword = document.getElementById("confirmarPassword").value;
-    if (
-        nombre.trim() === "" || correo.trim() === "" || password.trim() ===  "" || confPassword.trim() === "") {
-        alert("No pueden haber espacios en blanco.");
-        return false;
-    }
-    if (
-        password !== confPassword
-    ) {
-        alert("Las contraseñas deben coincidir")
-        return false;
-    }
-    return true;
-}
-*/
 function validarLogin() {
     const correoLogin = document.getElementById("emailLogin").value;
     const passwordLogin = document.getElementById("passwordLogin").value;
@@ -80,3 +51,15 @@ function validarLogin() {
         window.location.href="home.html"
         return true;
 }
+
+productos.forEach(producto => {
+    document.getElementById("contenedorProductos").innerHTML += `
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title">${producto.nombre}</h5>
+    <p class="card-text">${producto.precio}</p>
+    <a href="#" class="btn btn-primary">Más información</a>
+    </div>
+    </div>
+    `;
+    });
